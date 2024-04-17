@@ -144,17 +144,38 @@ async function loadFlashcards(filePath: string): Promise<void> {
     }
 }
 
-// Function to get a random flashcard
-function getRandomFlashcard(): Flashcard {
-    const randomIndex = Math.floor(Math.random() * flashcards.length);
-    return flashcards[randomIndex];
-}
 
 // Function to flip the flashcard
 function flipFlashcard(flashcard: Flashcard): void {
     console.log(`Question: ${flashcard.question}`);
     console.log(`Answer: ${flashcard.answer}`);
 }
+
+// app.js
+document.addEventListener('DOMContentLoaded', function() {
+    const flashcardElement = document.getElementById('flashcard');
+    const front = flashcardElement!.querySelector('.front');
+    const back = flashcardElement!.querySelector('.back');
+
+    function loadRandomFlashcard() {
+        const randomFlashcard = getRandomFlashcard();
+        front!.textContent = randomFlashcard.question;
+        back!.textContent = randomFlashcard.answer;
+    }
+
+    flashcardElement!.addEventListener('click', function() {
+        flashcardElement!.classList.toggle('flip');
+    });
+
+    loadRandomFlashcard();
+});
+
+// Assuming you have an array of flashcards defined as shown previously
+function getRandomFlashcard() {
+    const randomIndex = Math.floor(Math.random() * flashcards.length);
+    return flashcards[randomIndex];
+}
+
 
 // Example of using the functions
 async function main() {
