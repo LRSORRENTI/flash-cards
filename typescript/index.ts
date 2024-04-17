@@ -156,15 +156,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const flashcardElement = document.getElementById('flashcard');
     const front = flashcardElement!.querySelector('.front');
     const back = flashcardElement!.querySelector('.back');
-
+    const nextButton = document.getElementById('nextButton');
+    
     function loadRandomFlashcard() {
         const randomFlashcard = getRandomFlashcard();
         front!.textContent = randomFlashcard.question;
         back!.textContent = randomFlashcard.answer;
+        flashcardElement!.classList.remove('flip');
     }
 
     flashcardElement!.addEventListener('click', function() {
         flashcardElement!.classList.toggle('flip');
+    });
+
+    nextButton!.addEventListener('click', function() {
+        loadRandomFlashcard();
     });
 
     loadRandomFlashcard();
