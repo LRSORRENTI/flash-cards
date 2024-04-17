@@ -1,0 +1,89 @@
+Question: What is the purpose of DHCP in a network?
+Answer: DHCP (Dynamic Host Configuration Protocol) is used to automatically assign IP addresses and other network configuration parameters to devices on a network, allowing them to communicate effectively without manual setup.
+
+Question: Describe what a subnet mask is and how it is used.
+Answer: A subnet mask is a 32-bit number that masks an IP address and divides the IP address into network and host parts. It is used to determine what subnet an IP address belongs to.
+
+Question: What is the difference between UDP and TCP?
+Answer: TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable and ordered delivery of data packets. UDP (User Datagram Protocol) is a connectionless protocol that does not guarantee delivery, order, or error checking, making it faster and more efficient for applications that do not need guaranteed delivery.
+
+Question: Explain what DNS is and its role in networking.
+Answer: DNS (Domain Name System) is a system used to translate human-friendly domain names (like www.example.com) into IP addresses that computers use to identify each other on the network, facilitating easier access to websites and services.
+
+Question: What is the purpose of a VLAN?
+Answer: A VLAN (Virtual Local Area Network) is used to segment network traffic into different broadcast domains to enhance performance, improve security, and better manage network traffic.
+
+Question: Describe the function of NAT in a network.
+Answer: NAT (Network Address Translation) allows a network device (usually a firewall or router) to modify the IP addresses of incoming and outgoing traffic so that multiple devices on a private network can share a single public IP address.
+
+Question: What is the OSI model and its importance in networking?
+Answer: The OSI (Open Systems Interconnection) model is a conceptual framework used to understand network interactions in seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. It helps in troubleshooting and standardizing network operations.
+
+Question: How does a switch differ from a hub?
+Answer: A switch operates at the data link layer and directs data frames to devices on the same network based on MAC addresses. A hub, on the other hand, is a simpler device that broadcasts all incoming data to every port, without regard to which device the data is intended for.
+
+Question: Explain the purpose of a firewall in a network.
+Answer: A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules, protecting networks from unauthorized access and threats.
+
+Question: What are the basic functions of a router in a network?
+Answer: A router connects multiple networks and forwards data packets between them. It determines the best path for traffic and handles data transmission across different network segments.
+
+Question: What is the purpose of an access control list (ACL) on a network device?
+Answer: An ACL is used to define rules that allow or deny traffic based on various criteria such as IP addresses, protocols, or port numbers, thus controlling the flow of traffic and enhancing security.
+
+Question: Explain the concept of QoS and why it is important in networks.
+Answer: QoS (Quality of Service) is a mechanism used to prioritize network traffic to ensure the performance of critical applications in conditions of limited bandwidth. It's important for maintaining the efficiency and quality of service for voice, video, and other real-time communications.
+
+Question: What is the difference between a managed and an unmanaged switch?
+Answer: A managed switch allows for greater control over network traffic and more advanced features like VLANs, QoS, and network monitoring. An unmanaged switch is simpler and typically used in scenarios where network management is not necessary.
+
+Question: Describe what a DMZ (Demilitarized Zone) is used for in network security.
+Answer: A DMZ is a physical or logical subnetwork that contains and exposes an organization's external-facing services to a larger, untrusted network, typically the Internet. It adds an additional layer of security to an organization’s LAN.
+
+Question: What is IPv6 and how does it differ from IPv4?
+Answer: IPv6 is the most recent version of the Internet Protocol, designed to replace IPv4. It provides a much larger address space, improved routing and address autoconfiguration, built-in security features, and better QoS capabilities.
+
+Question: How do link-state routing protocols determine the best path?
+Answer: Link-state protocols, like OSPF, build a complete map of the topology and compute the shortest path to each node based on the state of each link (which includes factors like bandwidth and delay).
+
+Question: What role does SNMP play in network management?
+Answer: SNMP (Simple Network Management Protocol) is used for collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior.
+
+Question: Explain the difference between baseband and broadband signaling.
+Answer: Baseband signaling uses the entire bandwidth of the channel to transmit a single data signal. Broadband signaling divides the channel into multiple frequency ranges to transmit multiple data signals simultaneously.
+
+Question: What is a VPN and how does it work?
+Answer: A VPN (Virtual Private Network) extends a private network across a public network, allowing users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network. It works by establishing a virtual point-to-point connection through the use of dedicated connections, encryption, or a combination of both.
+
+Question: What are the three primary types of network media?
+Answer: The three primary types of network media are twisted pair cable (both shielded and unshielded), coaxial cable, and fiber optic cable. Each type has different characteristics and is suited for different network environments and requirements.
+
+Question: What is a collision domain and how can it be reduced?
+Answer: A collision domain is a network segment where data packets can collide if two devices try to transmit at the same time. It can be reduced by using switches instead of hubs, as each switch port provides a separate collision domain.
+
+Question: Explain the function of the Spanning Tree Protocol (STP).
+Answer: STP prevents network loops that can occur in a redundant network topology by creating a tree structure of switch connections. It blocks some paths to ensure there is only one active path between any two network nodes.
+
+Question: What is a packet and what does it contain?
+Answer: A packet is a small unit of data carried over a network. Packets contain control information such as source and destination addresses, sequencing information, and data payload.
+
+Question: Describe what an APIPA address is and when it might be used.
+Answer: APIPA (Automatic Private IP Addressing) addresses are self-configured, typically ranging from 169.254.0.1 to 169.254.255.254. They are used when a device cannot obtain an IP address from a DHCP server, allowing local networking in limited scenarios.
+
+Question: What is the primary purpose of a protocol analyzer in network management?
+Answer: A protocol analyzer, or network sniffer, captures network traffic and helps in analyzing and debugging data packets to diagnose network problems, monitor network activity, and ensure data is correctly transmitted.
+
+Question: Explain the difference between symmetric and asymmetric encryption.
+Answer: Symmetric encryption uses the same key for both encryption and decryption. Asymmetric encryption uses a pair of keys, one for encryption (public key) and one for decryption (private key), enhancing security by facilitating secure data exchange over unsecured networks.
+
+Question: What are the implications of using an open Wi-Fi network?
+Answer: Open Wi-Fi networks do not encrypt traffic, which can expose users to security risks such as eavesdropping by third parties, man-in-the-middle attacks, and unauthorized access to sensitive data.
+
+Question: Describe how a load balancer improves network efficiency.
+Answer: A load balancer distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed. This improves response times and availability, enhancing the overall performance of network services.
+
+Question: What are the benefits of using cloud-based network management?
+Answer: Cloud-based network management offers scalability, flexibility, and cost-efficiency by allowing network resources to be managed and monitored from centralized locations without the need for on-site infrastructure and maintenance.
+
+Question: Explain what multicast transmission is and its use case.
+Answer: Multicast transmission is the delivery of information to a group of destinations simultaneously using the most efficient strategy to deliver the messages over each link of the network only once. It's commonly used for streaming media, like video and audio broadcasts over the internet.
