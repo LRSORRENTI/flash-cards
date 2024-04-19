@@ -1,5 +1,7 @@
+import { cyberSecurityCards } from "./cyberSecurity";
+import { compTIA_A_Plus } from "./CompTIA_A+";
 // Define a type for the flashcard
-type Flashcard = {
+export type Flashcard = {
     question: string;
     answer: string;
 };
