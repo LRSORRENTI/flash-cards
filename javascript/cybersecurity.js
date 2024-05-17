@@ -1,4 +1,4 @@
-export const cybersecurityCards: any = [
+export const cybersecurityCards = [
     {
         question: "What is the purpose of DHCP in a network?",
         answer: "DHCP (Dynamic Host Configuration Protocol) is used to automatically assign IP addresses and other network configuration parameters to devices on a network, allowing them to communicate effectively without manual setup."

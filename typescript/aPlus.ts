@@ -1,6 +1,4 @@
-import { Flashcard } from ".";
-
-export const compTIA_A_Plus: Flashcard[] = [
+const aPlusCards = [
     {
         question: "What is the primary function of the BIOS in a computer?",
         answer: "The BIOS (Basic Input/Output System) is firmware that initializes and tests hardware components on a computer during the startup process (POST - Power-On Self-Test) and provides runtime services for operating systems and programs."

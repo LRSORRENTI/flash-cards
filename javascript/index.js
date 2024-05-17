@@ -178,7 +178,7 @@ function getRandomFlashcard() {
 // Example of using the functions
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        yield loadFlashcards('documents\\01_Questions.txt');
+        yield loadFlashcards('documents\\Cybersecurity.txt');
         const flashcard = getRandomFlashcard();
         flipFlashcard(flashcard);
     });

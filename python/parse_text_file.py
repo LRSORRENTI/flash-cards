@@ -25,7 +25,7 @@ def parse_questions_to_ts(input_file, output_file):
         file.write(ts_array)
 
 # Specify input and output files
-input_file = 'documents\\Cybersecurity+.txt'
+input_file = 'documents\\comptiaAPlus.txt'
 output_file = 'typescript\\ParsedTextFile.ts'
 
 # Call the function
